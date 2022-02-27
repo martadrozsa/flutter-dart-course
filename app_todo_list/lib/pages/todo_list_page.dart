@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class TodoListPage extends StatelessWidget {
   const TodoListPage({Key? key}) : super(key: key);
 
@@ -20,18 +21,16 @@ class TodoListPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 8),
-              ElevatedButton(
+               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.cyan,
-                  padding: EdgeInsets.zero,
+                  primary: const Color(0xff34495E),
+                  padding: const EdgeInsets.all(14),
                 ),
-                child: const Text(
-                  '+',
-                  style: TextStyle(
-                      fontSize: 40,
-                  ),
-                ),
+                child: const Icon(
+                  Icons.add,
+                  size: 30,
+                )
               )
             ],
           ),
