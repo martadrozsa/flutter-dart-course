@@ -39,21 +39,21 @@ class TodoListPage extends StatelessWidget {
               ListView(
                 shrinkWrap: true,
                 children: [
-                  Container(
-                    color: Colors.red,
-                    height: 50,
+                  ListTile(
+                    title: const Text('Tarefa 1'),
+                    subtitle: const Text('20/11/2020'),
+                    leading: const Icon(Icons.save, size: 30),
+                    onTap: () {
+                      print('Tarefa 1');
+                    },
                   ),
-                  Container(
-                    color: Colors.yellow,
-                    height: 50,
-                  ),
-                  Container(
-                    color: Colors.green,
-                    height: 50,
-                  ),
-                  Container(
-                    color: Colors.blue,
-                    height: 50,
+                  ListTile(
+                    title: const Text('Tarefa 2'),
+                    subtitle: const Text('21/11/2020'),
+                    leading: const Icon(Icons.save, size: 30),
+                    onTap: () {
+                      print('Tarefa 2');
+                    },
                   ),
                 ],
               ),
